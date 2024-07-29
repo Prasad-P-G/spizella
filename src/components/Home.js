@@ -13,14 +13,14 @@ export default function Home() {
               <div className="col col-mid-6">
                 <img
                   style={{ height: "80vh" }}
-                  src="/Images/access_control_system.jpg"
+                  src="./Images/access_control_system.jpg"
                   className="d-block w-100"
                 ></img>
               </div>
               <div className="col col-mid-4">
                 <img
                   style={{ height: "80vh" }}
-                  src="/Images/Full_Height_2 Line Turnstile.jpg"
+                  src="./Images/Full_Height_2 Line Turnstile.jpg"
                   className="d-block w-100"
                 ></img>
               </div>
@@ -47,14 +47,14 @@ export default function Home() {
               <div className="col col-mid-6">
                 <img
                   style={{ height: "80vh" }}
-                  src="/Images/Surveillance system.jpeg"
+                  src="./Images/Surveillance system.jpeg"
                   className="d-block w-100"
                 ></img>
               </div>
               <div className="col col-mid-4">
                 <img
                   style={{ height: "80vh" }}
-                  src="/Images/Tripod Bridge.jpg"
+                  src="./Images/Tripod Bridge.jpg"
                   className="d-block w-100"
                 ></img>
               </div>
@@ -94,14 +94,14 @@ export default function Home() {
               <div className="col col-mid-6">
                 <img
                   style={{ height: "80vh" }}
-                  src="/Images/Cyber security.jpeg"
+                  src="./Images/Cyber security.jpeg"
                   className="d-block w-100"
                 ></img>
               </div>
               <div className="col col-mid-4">
                 <img
                   style={{ height: "80vh" }}
-                  src="/Images/Tripod.jpg"
+                  src="./Images/Tripod.jpg"
                   className="d-block w-100"
                 ></img>
               </div>
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="sub-heading">Product & Services</div>
           <img
             style={{ height: "80vh" }}
-            src="/Images/Software development.jpeg"
+            src="./Images/Software development.jpeg"
             className="d-block w-100"
           ></img>
           <Carousel.Caption>
@@ -148,7 +148,7 @@ export default function Home() {
           <div className="sub-heading">Product & Services</div>
           <img
             style={{ height: "80vh" }}
-            src="/Images/Cluode Solutions.png"
+            src="./Images/Cluode Solutions.png"
             className="d-block w-100"
           ></img>
           <Carousel.Caption>
@@ -166,7 +166,7 @@ export default function Home() {
           <div className="sub-heading">Product & Services</div>
           <img
             style={{ height: "80vh" }}
-            src="/Images/Custom software Development.jpeg"
+            src="./Images/Custom software Development.jpeg"
             className="d-block w-100"
           ></img>
           <Carousel.Caption>

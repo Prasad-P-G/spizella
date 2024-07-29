@@ -7,7 +7,7 @@ export default function CloudServiceSolutions() {
 
       <div class="row">
         <div class="col col-sm-3 " style={{ height: "200px" }}>
-          <img src="/Images/Cluode Solutions.png"></img>
+          <img src="./Images/Cluode Solutions.png"></img>
         </div>
 
         <div className="cyberBlock col col-ms-9">

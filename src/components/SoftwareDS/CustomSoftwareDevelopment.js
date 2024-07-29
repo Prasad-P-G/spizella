@@ -7,7 +7,7 @@ export default function CustomSoftwareDevelopment() {
 
       <div class="customContainer row">
         <div class="col col-md-3" style={{ height: "400px" }}>
-          <img src="/Images/Custom software Development.jpeg"></img>
+          <img src="./Images/Custom software Development.jpeg"></img>
         </div>
 
         <div className="cyberBlock col col-md-8">

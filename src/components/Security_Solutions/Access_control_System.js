@@ -2,53 +2,53 @@ import React, { useEffect, useState } from "react";
 import ImageBuilder from "../Utility/ImageBuilder";
 
 const imageList = [
-  { url: "./Images/Access Control Systems/Tripod.jpg", text: "Tripod" },
+  { url: "../Images/Access Control Systems/Tripod.jpg", text: "Tripod" },
   {
-    url: "./Images/Access Control Systems/Tripod Bridge.jpg",
+    url: "../Images/Access Control Systems/Tripod Bridge.jpg",
     text: "Tripod Bridge",
   },
   {
-    url: "./Images/Access Control Systems/Full_Height_2 Line Turnstile.jpg",
+    url: "../Images/Access Control Systems/Full_Height_2 Line Turnstile.jpg",
     text: "Full Height 2-Line Turnstile",
   },
   {
-    url: "./Images/Access Control Systems/Flap Barrier-Gate.jpg",
+    url: "../Images/Access Control Systems/Flap Barrier-Gate.jpg",
     text: "Flap Barrier-Gate",
   },
   {
-    url: "./Images/Access Control Systems/P Type Swing Gate.jpg",
+    url: "../Images/Access Control Systems/P Type Swing Gate.jpg",
     text: "P-Type Swing Gate",
   },
   {
-    url: "./Images/Access Control Systems/Turnstile lock.jpeg",
+    url: "../Images/Access Control Systems/Turnstile lock.jpeg",
     text: "Turnstile lock",
   },
   {
-    url: "./Images/Access Control Systems/Full_Height_Turnstile.jpg",
+    url: "../Images/Access Control Systems/Full_Height_Turnstile.jpg",
     text: "Full Height Turnstile",
   },
   {
-    url: "./Images/Access Control Systems/Full_Height_4 Line Turnstile.jpeg",
+    url: "../Images/Access Control Systems/Full_Height_4 Line Turnstile.jpeg",
     text: "Full Height 4 Line Turnstile",
   },
   {
-    url: "./Images/Access Control Systems/Full_Height_3 Line Turnstile.jpeg",
+    url: "../Images/Access Control Systems/Full_Height_3 Line Turnstile.jpeg",
     text: "Full Height 3 Line Turnstile",
   },
   {
-    url: "./Images/Access Control Systems/Boom Barrier.jpeg",
+    url: "../Images/Access Control Systems/Boom Barrier.jpeg",
     text: "Boom Barrier",
   },
   {
-    url: "./Images/Access Control Systems/Bollards.jpeg",
+    url: "../Images/Access Control Systems/Bollards.jpeg",
     text: "Bollards",
   },
   {
-    url: "./Images/Access Control Systems/Bollards2.jpeg",
+    url: "../Images/Access Control Systems/Bollards2.jpeg",
     text: "Bollards",
   },
   {
-    url: "./Images/Access Control Systems/Automatic Boom Barrier.jpeg",
+    url: "../Images/Access Control Systems/Automatic Boom Barrier.jpeg",
     text: "Automatic Boom Barrier",
   },
 ];

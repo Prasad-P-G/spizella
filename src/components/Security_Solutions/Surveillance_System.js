@@ -4,27 +4,27 @@ import ImageBuilder from "../Utility/ImageBuilder";
 
 const imageList = [
   {
-    url: "./Images/Surveillance Systems/DVR Surveillance.jpeg",
+    url: "../Images/Surveillance Systems/DVR Surveillance.jpeg",
     text: "DVR Surveillance",
   },
   {
-    url: "./Images/Surveillance Systems/Industrial Security.jpeg",
+    url: "../Images/Surveillance Systems/Industrial Security.jpeg",
     text: "Industrial Security",
   },
   {
-    url: "./Images/Surveillance Systems/Security system.jpeg",
+    url: "../Images/Surveillance Systems/Security system.jpeg",
     text: "Security system",
   },
   {
-    url: "./Images/Surveillance Systems/Home security.jpeg",
+    url: "../Images/Surveillance Systems/Home security.jpeg",
     text: "Home security",
   },
   {
-    url: "./Images/Surveillance Systems/Home security2.jpeg",
+    url: "../Images/Surveillance Systems/Home security2.jpeg",
     text: "Home security",
   },
   {
-    url: "./Images/Surveillance Systems/Video Surveillance.jpeg",
+    url: "../Images/Surveillance Systems/Video Surveillance.jpeg",
     text: "Video Surveillance",
   },
 ];

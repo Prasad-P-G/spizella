@@ -7,7 +7,7 @@ export default function MobileApplicationsDevelopment() {
 
       <div className="cyberBlock">
         <div>
-          <img src="/Images/MAD.jpg" style={{ height: "250px" }}></img>
+          <img src="./Images/MAD.jpg" style={{ height: "250px" }}></img>
         </div>
 
         <div>
