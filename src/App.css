@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+*{
+  background-color:#6886e2;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +19,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #49608f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +40,180 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-nav li{
+  background-color: #0c2c68;
+  margin-left : 5px;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 3px;
+  font-size: medium;
+  font-stretch:extra-expanded;
+  font-weight: bold;
+  color: rgb(58, 38, 38);
+}
+.navbar-nav li :hover {
+  
+  font-weight: bold;  
+  font-size: 18px;
+}
+
+.navbar-nav li :active {
+  
+  font-weight: bold;  
+  font-size: 18px;
+  background-color: #49608f;
+}
+.navbar-nav li :focus {
+  
+  font-weight: bold;  
+  font-size: 18px;
+  background-color: #49608f;
+}
+
+.dropdown-menu ul{
+  list-style: none;
+  padding: 0;  
+}
+.dropdown-menu li {
+  width: 220px;
+}
+
+.button-container .selected-button:hover{
+  font-weight: bold;  
+  font-size: 15px;
+} 
+
+.app-container {
+  margin-top: 30px;   
+  align-items: start;
+  display: flex;  
+  margin-left: 10px;
+}
+.imgBuilder{
+  display: flex;  
+  flex-wrap: wrap;
+  column-gap: 30px;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.next{
+  display: flex;
+  align-items:center; 
+  align-items: end;
+  border-radius: 15px;
+  padding-right: 50px;
+  justify-content: flex-end;
+  height: 30px;
+   
+}
+.next a {
+  color: white;
+  background: #484aba;  
+}
+.next a:hover {
+  color: rgb(9, 4, 34);
+  background: #484aba;  
+  font-weight: bold;
+}
+ 
+
+
+.button-container .selected-button{
+   width: 300px;
+   background-color: rgba(124, 22, 29, 0.267)
+}
+
+.button-container .selected-button:active{
+  background:rgb(12, 19, 27);
+  color: white;
+}
+
+.button-container .selected-button{
+  background:rgb(12, 19, 27);
+  color: white;
+  margin: 5px;
+}
+
+/* .button-container .button {
+  margin-top: 10;
+} */
+
+.button-container .selected-button::after{
+  background:rgb(12, 19, 27);
+  color: white;
+}
+
+.button-container .selected-button:hover{
+  background:rgb(91, 122, 227);
+  color: white;
+}
+.button-container .button:hover{
+  background:rgb(12, 19, 27);
+  color: white;
+}
+ 
+.dropdown-menu {
+  padding: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 23)
+}
+.dropdown-menu li :hover {
+  background-color: #49608f;
+}
+.navbar-nav li.Selected{
+  background-color: #c51682;
+}
+
+.col {
+  width: 200px;
+  margin: 5px;
+}
+
+.sub-heading{
+  width: auto;
+  color: white;
+  margin-bottom:10px;
+  background-color: #484aba;
+  font-size: 25px;
+  font-weight: bold;
+}
+.heading{
+  width: auto;
+  color: white;
+  margin:5px;
+  background-color: #484aba;
+  font-size: 30px;
+  font-weight: bold;
+}
+.imgText{
+  width: 200px;
+  color: white;   
+  font-size: 15px;
+  font-weight: bold;
+  align-items: center;
+  text-wrap: wrap ;
+  align-content: center;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.cyberBlock{
+ font-weight: bold;
+ color: rgb(20, 2, 2);   
+}
+.imgCyber{
+  width: 100%;
+}
+
+ 
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }

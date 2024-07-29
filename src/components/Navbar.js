@@ -6,11 +6,28 @@ export default function Navbar() {
     <div>
       <nav
         className="navbar navbar-expand-lg"
-        style={{ backgroundColor: "skyblue" }}
+        style={{ backgroundColor: "MenuText" }}
       >
         <div className="container-fluid">
-          <Link className="navbar-brand " style={{ fontWeight: "bold" }} to="/">
-            SPIZELLA
+          <Link>
+            <img
+              width={50}
+              height={50}
+              style={{ margin: 5, background: "#6886e2" }}
+              src="/Images/spizellaLogo.jpg"
+            />
+          </Link>
+
+          <Link
+            className="navbar-brand  mx-1"
+            style={{ fontWeight: "bold", marginRight: "10px" }}
+            to="/"
+          >
+            <div>
+              <h1 style={{ fontWeight: "bold", marginRight: "50px" }}>
+                Spizella
+              </h1>
+            </div>
           </Link>
           <button
             className="navbar-toggler"
@@ -30,42 +47,92 @@ export default function Navbar() {
                   className="nav-link active"
                   aria-current="page"
                   to="/home"
+                  style={{ color: "white" }}
                 >
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
+
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link active"
                   aria-current="page"
                   to="/products"
+                  style={{ color: "white" }}
                 >
                   Products
                 </Link>
+              </li> */}
+
+              <li className="nav-item dropdown">
+                <a
+                  style={{ color: "white" }}
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <div className="dropdown-menu">
+                  <ul>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/SecuritySolution"
+                        style={{ color: "white" }}
+                      >
+                        Security Solutions
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/services"
+
+              <li className="nav-item dropdown">
+                <a
+                  style={{ color: "white" }}
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
                   Services
-                </Link>
+                </a>
+                <div className="dropdown-menu">
+                  <ul>
+                    <li style={{ width: "350px" }}>
+                      <Link
+                        className="dropdown-item"
+                        to="/softwareDevelopmentServices"
+                        style={{ color: "white" }}
+                      >
+                        Software Development & Services
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
+
               <li className="nav-item">
                 <Link
                   className="nav-link active"
                   aria-current="page"
                   to="/about"
+                  style={{ color: "white" }}
                 >
                   About
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link
                   className="nav-link active"
                   aria-current="page"
                   to="/contact"
+                  style={{ color: "white" }}
                 >
                   Contact
                 </Link>
