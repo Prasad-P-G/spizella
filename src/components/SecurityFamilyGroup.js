@@ -13,7 +13,7 @@ export default function SecurityFamilyGroup({
             <>
               <div className="flex flex-col">
                 <button
-                  style={{ width: "300px" }}
+                  style={{ width: "300px", fontWeight: "bold" }}
                   className={isSelected == index ? "selected-button" : "button"}
                   onClick={() => setIsSelected(index)}
                 >

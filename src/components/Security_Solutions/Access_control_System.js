@@ -72,7 +72,12 @@ export default function Access_control_System() {
   return (
     <>
       <div className="sub-heading">Acess Security Systems</div>
-
+      <p className="DescText">
+        Access control is a data security process that enables organizations to
+        manage who is authorized to access corporate data and resources. Secure
+        access control uses policies that verify users are who they claim to be
+        and ensures appropriate control access levels are granted to users.
+      </p>
       <div>
         <ImageBuilder imageLists={imageList}></ImageBuilder>
       </div>

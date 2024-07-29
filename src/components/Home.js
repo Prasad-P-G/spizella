@@ -4,9 +4,10 @@ import Carousel from "react-bootstrap/Carousel";
 export default function Home() {
   return (
     <div>
-      <Carousel>
+      <Carousel className="carouselContainer">
         <Carousel.Item>
-          <h2 style={{ fontWeight: "bold" }}>Security Solutions</h2>
+          {/* <h2 style={{ fontWeight: "bold" }}>Security Solutions</h2> */}
+          <div className="sub-heading">Security Solutions</div>
           <div className="container">
             <div className="row">
               <div className="col col-mid-6">
@@ -39,7 +40,8 @@ export default function Home() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <h2 style={{ fontWeight: "bold" }}>Security Solutions</h2>
+          {/* <h2 style={{ fontWeight: "bold" }}>Security Solutions</h2> */}
+          <div className="sub-heading">Security Solutions</div>
           <div className="container">
             <div className="row">
               <div className="col col-mid-6">
@@ -85,8 +87,8 @@ export default function Home() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <h2 style={{ fontWeight: "bold" }}>Security Solutions</h2>
-
+          {/* <h2 style={{ fontWeight: "bold" }}>Security Solutions</h2> */}
+          <div className="sub-heading">Security Solutions</div>
           <div className="container">
             <div className="row">
               <div className="col col-mid-6">
@@ -118,6 +120,7 @@ export default function Home() {
         </Carousel.Item>
 
         <Carousel.Item>
+          <div className="sub-heading">Product & Services</div>
           <img
             style={{ height: "80vh" }}
             src="/Images/Software development.jpeg"
@@ -142,6 +145,7 @@ export default function Home() {
         </Carousel.Item>
 
         <Carousel.Item>
+          <div className="sub-heading">Product & Services</div>
           <img
             style={{ height: "80vh" }}
             src="/Images/Cluode Solutions.png"
@@ -159,6 +163,7 @@ export default function Home() {
         </Carousel.Item>
 
         <Carousel.Item>
+          <div className="sub-heading">Product & Services</div>
           <img
             style={{ height: "80vh" }}
             src="/Images/Custom software Development.jpeg"

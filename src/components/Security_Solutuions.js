@@ -3,11 +3,13 @@ import SecurityFamilyGroup from "./SecurityFamilyGroup";
 import Access_control_System from "./Security_Solutions/Access_control_System";
 import Surveillance_System from "./Security_Solutions/Surveillance_System";
 import Cyber_Security_Service from "./Security_Solutions/Cyber_Security_Service";
+import Others from "./Security_Solutions/Others";
 
 const securityFamily = [
   "Access Control Systems",
   "Surveillance Systems",
   "Cyber Security Services",
+  "Other Services",
 ];
 
 const RenderComponent = ({ index }) => {
@@ -20,6 +22,10 @@ const RenderComponent = ({ index }) => {
       break;
     case 2:
       return <Cyber_Security_Service />;
+      break;
+
+    case 3:
+      return <Others />;
       break;
 
     default:

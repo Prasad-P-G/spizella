@@ -13,6 +13,7 @@ import SoftwareDS from "./components/SoftwareDS";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import Others from "./components/Security_Solutions/Others";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/services" element={<Services />}></Route>
         <Route path="/products" element={<Products />}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route path="/others" element={<Others></Others>}></Route>
         <Route
           path="/SecuritySolution"
           element={<Security_Solutuions></Security_Solutuions>}

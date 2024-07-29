@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "@popperjs/core";
+import "bootstrap";
+
 export default function Navbar() {
   return (
     <div>
@@ -115,6 +120,17 @@ export default function Navbar() {
                   </ul>
                 </div>
               </li>
+
+              {/* <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/others"
+                  style={{ color: "white" }}
+                >
+                  Others
+                </Link>
+              </li> */}
 
               <li className="nav-item">
                 <Link
