@@ -3,7 +3,7 @@ import React from "react";
 export default function Cyber_Security_Service() {
   return (
     <>
-      <div className="sub-heading">Cyber Secirity Systems</div>
+      <div className="sub-heading">Cyber Security Systems</div>
 
       <div className="cyberBlock">
         Cyber security services are professional services that help
