@@ -2,21 +2,21 @@ import React, { useEffect, useState } from "react";
 import ImageBuilder from "../Utility/ImageBuilder";
 
 const imageList = [
-  { url: "../Images/Access Control Systems/Tripod.jpg", text: "Tripod" },
+  { url: "../Images/Access Control Systems/Tripod.JPG", text: "Tripod" },
   {
-    url: "../Images/Access Control Systems/Tripod Bridge.jpg",
+    url: "../Images/Access Control Systems/Tripod Bridge.JPG",
     text: "Tripod Bridge",
   },
   {
-    url: "../Images/Access Control Systems/Full_Height_2 Line Turnstile.jpg",
+    url: "../Images/Access Control Systems/Full_Height_2 Line Turnstile.JPG",
     text: "Full Height 2-Line Turnstile",
   },
   {
-    url: "../Images/Access Control Systems/Flap Barrier-Gate.jpg",
+    url: "../Images/Access Control Systems/Flap Barrier-Gate.JPG",
     text: "Flap Barrier-Gate",
   },
   {
-    url: "../Images/Access Control Systems/P Type Swing Gate.jpg",
+    url: "../Images/Access Control Systems/P Type Swing Gate.JPG",
     text: "P-Type Swing Gate",
   },
   {
@@ -24,7 +24,7 @@ const imageList = [
     text: "Turnstile lock",
   },
   {
-    url: "../Images/Access Control Systems/Full_Height_Turnstile.jpg",
+    url: "../Images/Access Control Systems/Full_Height_Turnstile.JPG",
     text: "Full Height Turnstile",
   },
   {

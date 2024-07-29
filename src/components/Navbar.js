@@ -19,7 +19,7 @@ export default function Navbar() {
               width={50}
               height={50}
               style={{ margin: 5, background: "#6886e2" }}
-              src="./Images/spizellaLogo.jpg"
+              src="./Images/spizellaLogo.JPG"
             />
           </Link>
 
