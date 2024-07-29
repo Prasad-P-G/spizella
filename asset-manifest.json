@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/spizella/static/css/main.90dc7222.css",
-    "main.js": "/spizella/static/js/main.face7077.js",
+    "main.js": "/spizella/static/js/main.f5e63bd8.js",
     "static/js/453.48f89ea2.chunk.js": "/spizella/static/js/453.48f89ea2.chunk.js",
     "static/media/logo.svg": "/spizella/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/spizella/index.html",
     "main.90dc7222.css.map": "/spizella/static/css/main.90dc7222.css.map",
-    "main.face7077.js.map": "/spizella/static/js/main.face7077.js.map",
+    "main.f5e63bd8.js.map": "/spizella/static/js/main.f5e63bd8.js.map",
     "453.48f89ea2.chunk.js.map": "/spizella/static/js/453.48f89ea2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90dc7222.css",
-    "static/js/main.face7077.js"
+    "static/js/main.f5e63bd8.js"
   ]
 }
