@@ -41,7 +41,7 @@ export default function Contact() {
                   value={email}
                   required
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter Your Email Address"
+                  placeholder="Enter Email Address"
                 />
               </Form.Group>
 
@@ -51,7 +51,7 @@ export default function Contact() {
                   value={phone}
                   required
                   onChange={(e) => setphone(e.target.value)}
-                  placeholder="Enter Your Email Address"
+                  placeholder="Enter Phone Number"
                 />
               </Form.Group>
 
@@ -72,6 +72,7 @@ export default function Contact() {
                 <Form.Label>Description</Form.Label>
                 <Form.Control
                   as="textarea"
+                  placeholder="Enter Description"
                   rows={5}
                   onChange={(e) => setdescription(e.target.value)}
                   value={description}
