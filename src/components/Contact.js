@@ -15,7 +15,7 @@ export default function Contact() {
 
     // console.log({ email }, { subject }, { description });
 
-    const user = { email, subject, description };
+    const user = { email, phone, subject, description };
 
     console.log(user);
   };
