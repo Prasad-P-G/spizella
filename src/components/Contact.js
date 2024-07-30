@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import * as Icon from "react-bootstrap-icons";
 import validation from "./Validation";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import emailjs from "@emailjs/browser";
+import { Form } from "react-router-dom";
 
 export default function Contact() {
+  const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
   const [Subject, setSubject] = useState("");
   const [Description, setdescription] = useState("");
@@ -16,6 +19,8 @@ export default function Contact() {
   //Error hook
   const [errors, setErrors] = useState({});
 
+  const form = useRef();
+
   const handleEmail = (e) => {
     console.log(Email);
     console.log(e.target.value);
@@ -25,9 +30,15 @@ export default function Contact() {
     setValidEmail(ValidateEmail(e.target.value));
   };
 
+  const handleName = (e) => {
+    setName(e.target.value);
+    console.log(Name);
+  };
+
   const handleDescription = (e) => {
     setdescription(e.target.value);
   };
+
   const handleSubject = (e) => {
     setSubject(e.target.value);
   };
@@ -36,9 +47,23 @@ export default function Contact() {
     setValid(ValidatePhoneNumber(value));
   };
 
+  //sending Email
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(Email + "," + PhoneNumber + "," + Subject + "," + Description);
+
+    emailjs
+      .sendForm("service_glm7afc", "YOUR_TEMPLATE_ID", form.current, {
+        publicKey: "YOUR_PUBLIC_KEY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   const ValidateEmail = (email) => {
@@ -71,12 +96,27 @@ export default function Contact() {
               WRITE US
             </div>
 
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
+              <div>
+                <label style={{ fontSize: "18px" }}>
+                  <strong>Name</strong>
+                </label>
+                <input
+                  name="from_name"
+                  type="text"
+                  placeholder="Enter your name"
+                  value={Name}
+                  className="form-control"
+                  onChange={handleName}
+                ></input>
+              </div>
+
               <div>
                 <label for="email" style={{ fontSize: "18px" }}>
                   <strong>Email</strong>
                 </label>
                 <input
+                  name="from_email"
                   style={{ width: "300px" }}
                   type="email"
                   placeholder="Enter Email Address"
@@ -96,6 +136,7 @@ export default function Contact() {
                   <labelc style={{ fontSize: "18px" }}>
                     <strong>Phone Number</strong>
                     <PhoneInput
+                      name="phone_number"
                       country={"in"}
                       inputProps={{
                         require: true,
@@ -117,6 +158,7 @@ export default function Contact() {
                   <strong>Subject</strong>
                 </label>
                 <input
+                  name="subject"
                   type="text"
                   placeholder="Enter Subject"
                   value={Subject}
@@ -130,7 +172,7 @@ export default function Contact() {
                   <strong>Description</strong>
                 </label>
                 <textarea
-                  type="textarea"
+                  name="message"
                   rows="5"
                   cols="40"
                   value={Description}
