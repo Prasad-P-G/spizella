@@ -278,6 +278,11 @@
  font-weight: bold;
  font-size: 50;
 }
+.btnSend{
+  display: flex;  
+  justify-content: center;
+  margin-top: 10px;
+}
 .ContainerItems{
   display: flex;  
   justify-content: center;
@@ -294,10 +299,19 @@ Form.Label{
 .contactInfo{
   display: flex;
   font-weight: bold;
+  filter : "blur(8px)"
+}
+
+.contactInfo h3{
+  filter : "blur(8px)"
 }
 .contactInfo{
  margin: 10px;
 }
 .iconStyle{
   margin-right: 5px
+}
+
+.feedbackForm div {
+  margin-bottom: 5px;
 }
