@@ -5,12 +5,16 @@ export default function MobileApplicationsDevelopment() {
     <>
       <div className="sub-heading">Mobile Applications Development</div>
 
-      <div className="cyberBlock">
+      <div class="customContainer">
         <div>
-          <img src="./Images/MAD.JPG" style={{ height: "250px" }}></img>
+          <img
+            className="imageBuild"
+            src="./Images/MAD.JPG"
+            style={{ width: "800px", height: "200px" }}
+          ></img>
         </div>
 
-        <div>
+        <div className="paraConatainer">
           <p>
             Mobile application development is the process of creating software
             applications that run on a mobile device, and a typical mobile

@@ -84,123 +84,120 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <>
       <div className="sub-heading">Contact</div>
       <div className="ContainerItems">
         <div>
-          <div>
-            <div
-              className="contactHeading"
-              style={{ fontSize: "25px", fontWeight: "bold" }}
-            >
-              WRITE US
+          {/* <div> */}
+          <div
+            className="contactHeading"
+            style={{ fontSize: "25px", fontWeight: "bold" }}
+          >
+            WRITE US
+          </div>
+
+          <form ref={form}>
+            <div>
+              <label style={{ fontSize: "18px" }}>
+                <strong>Name</strong>
+              </label>
+              <input
+                name="from_name"
+                type="text"
+                placeholder="Enter your name"
+                value={Name}
+                className="form-control"
+                onChange={handleName}
+                style={{
+                  width: "300px",
+                  fontWeight: "bold",
+                }}
+              ></input>
             </div>
 
-            <form ref={form}>
+            <div>
+              <label style={{ fontSize: "18px" }}>
+                <strong>Email</strong>
+              </label>
+              <input
+                name="from_email"
+                style={{ width: "300px", fontWeight: "bold" }}
+                type="email"
+                placeholder="Enter Email Address"
+                onChange={handleEmail}
+                value={Email}
+                className="form-control"
+              ></input>
+              {!ValidEmail && (
+                <p style={{ color: "Red", fontWeight: "bold", height: "10px" }}>
+                  Please enter a valid email
+                </p>
+              )}
+            </div>
+
+            <div>
               <div>
                 <label style={{ fontSize: "18px" }}>
-                  <strong>Name</strong>
+                  <strong>Phone Number</strong>
+                  <PhoneInput
+                    name="phone_number"
+                    country={"in"}
+                    inputProps={{
+                      require: true,
+                    }}
+                    value={PhoneNumber}
+                    onChange={handlePhone}
+                  ></PhoneInput>
                 </label>
-                <input
-                  name="from_name"
-                  type="text"
-                  placeholder="Enter your name"
-                  value={Name}
-                  className="form-control"
-                  onChange={handleName}
-                ></input>
               </div>
+              {!Valid && (
+                <p style={{ color: "Red", fontWeight: "bold", height: "10px" }}>
+                  Please enter a valid phone number
+                </p>
+              )}
+            </div>
 
-              <div>
-                <label style={{ fontSize: "18px" }}>
-                  <strong>Email</strong>
-                </label>
-                <input
-                  name="from_email"
-                  style={{ width: "300px" }}
-                  type="email"
-                  placeholder="Enter Email Address"
-                  onChange={handleEmail}
-                  value={Email}
-                  className="form-control"
-                ></input>
-                {!ValidEmail && (
-                  <p style={{ color: "Red", fontWeight: "bold" }}>
-                    Please enter a valid email
-                  </p>
-                )}
-              </div>
+            <div>
+              <label style={{ fontSize: "18px" }}>
+                <strong>Subject</strong>
+              </label>
+              <input
+                name="subject"
+                type="text"
+                placeholder="Enter Subject"
+                value={Subject}
+                className="form-control"
+                onChange={handleSubject}
+                style={{ fontWeight: "bold" }}
+              ></input>
+            </div>
 
-              <div>
-                <div>
-                  <label style={{ fontSize: "18px" }}>
-                    <strong>Phone Number</strong>
-                    <PhoneInput
-                      name="phone_number"
-                      country={"in"}
-                      inputProps={{
-                        require: true,
-                      }}
-                      value={PhoneNumber}
-                      onChange={handlePhone}
-                    ></PhoneInput>
-                  </label>
-                </div>
-                {!Valid && (
-                  <p style={{ color: "Red", fontWeight: "bold" }}>
-                    Please enter a valid phone number
-                  </p>
-                )}
-              </div>
-
-              <div>
-                <label style={{ fontSize: "18px" }}>
-                  <strong>Subject</strong>
-                </label>
-                <input
-                  name="subject"
-                  type="text"
-                  placeholder="Enter Subject"
-                  value={Subject}
-                  className="form-control"
-                  onChange={handleSubject}
-                ></input>
-              </div>
-
-              <div>
-                <label for="description" style={{ fontSize: "18px" }}>
-                  <strong>Description</strong>
-                </label>
-                <textarea
-                  name="message"
-                  rows="5"
-                  cols="40"
-                  value={Description}
-                  placeholder="Enter Description"
-                  className="form-control"
-                  onChange={handleDescription}
-                ></textarea>
-              </div>
-              <div className="btnSend">
-                <button
-                  type="submit"
-                  className="btn btn-primary"
-                  disabled={Valid && ValidEmail ? false : true}
-                >
-                  SEND
-                </button>
-              </div>
-            </form>
-            {/* <div className="btnSend">
+            <div>
+              <label for="description" style={{ fontSize: "18px" }}>
+                <strong>Description</strong>
+              </label>
+              <textarea
+                name="message"
+                rows="5"
+                cols="40"
+                value={Description}
+                placeholder="Enter Description"
+                className="form-control"
+                onChange={handleDescription}
+                style={{ fontWeight: "bold" }}
+              ></textarea>
+            </div>
+            <div className="btnSend">
               <button
                 type="submit"
-                className="btn btn-primary"
+                className="buttonSend"
                 disabled={Valid && ValidEmail ? false : true}
               >
                 SEND
               </button>
-            </div> */}
-          </div>
+            </div>
+          </form>
+          {/* </div> */}
         </div>
 
         {/* divider */}
@@ -275,6 +272,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -5,12 +5,16 @@ export default function Cyber_Security_Service() {
     <>
       <div className="sub-heading">Cyber Security Systems</div>
 
-      <div class="row">
-        <div class="col col-sm-3 " style={{ height: "200px" }}>
-          <img src="./Images/Cyber security.jpeg "></img>
+      <div class="customContainer">
+        <div>
+          <img
+            className="imageBuild"
+            src="./Images/Cyber security.jpeg "
+            style={{ width: "800px", height: "200px" }}
+          ></img>
         </div>
 
-        <div className="cyberBlock col col-ms-9">
+        <div className="paraConatainer">
           <p>
             Cyber security services are professional services that help
             organizations protect their networks and data from cyber-attacks and

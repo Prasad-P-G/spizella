@@ -11,7 +11,7 @@ export default function SecurityFamilyGroup({
         {securityFamilies.map((text, index) => {
           return (
             <>
-              <div className="flex flex-col">
+              <div className="flex flex-col" style={{ borderRadius: "20px" }}>
                 <button
                   style={{ width: "300px", fontWeight: "bold" }}
                   className={isSelected == index ? "selected-button" : "button"}

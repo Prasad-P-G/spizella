@@ -5,12 +5,16 @@ export default function CloudServiceSolutions() {
     <>
       <div className="sub-heading">Cloud Service Solutions</div>
 
-      <div class="row">
-        <div class="col col-sm-3 " style={{ height: "200px" }}>
-          <img src="./Images/Cluode Solutions.png"></img>
+      <div class="customContainer">
+        <div>
+          <img
+            className="imageBuild"
+            src="./Images/Cluode Solutions.png"
+            style={{ width: "800px", height: "200px" }}
+          ></img>
         </div>
 
-        <div className="cyberBlock col col-ms-9">
+        <div className="paraConatainer">
           <p>
             cloud computing is the delivery of computing services—including
             servers, storage, databases, networking, software, analytics, and

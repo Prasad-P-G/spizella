@@ -6,11 +6,15 @@ export default function CustomSoftwareDevelopment() {
       <div className="sub-heading">Custom Software Development</div>
 
       <div class="customContainer row">
-        <div class="col col-md-3" style={{ height: "400px" }}>
-          <img src="./Images/Custom software Development.jpeg"></img>
+        <div>
+          <img
+            className="imageBuild"
+            src="./Images/Custom software Development.jpeg"
+            style={{ width: "800px", height: "200px" }}
+          ></img>
         </div>
 
-        <div className="cyberBlock col col-md-8">
+        <div className="paraConatainer">
           <p>
             Software development refers to a set of computer science activities
             that are dedicated to the process of creating, designing, deploying,

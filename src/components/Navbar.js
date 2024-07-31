@@ -9,31 +9,33 @@ import "bootstrap";
 export default function Navbar() {
   return (
     <div>
-      <nav
-        className="navbar navbar-expand-lg"
-        style={{ backgroundColor: "MenuText" }}
-      >
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <Link>
-            <img
-              width={50}
-              height={50}
-              style={{ margin: 5, background: "#6886e2" }}
-              src="./Images/spizellaLogo.JPG"
-            />
-          </Link>
+          {/* company Logo */}
+          <div className="companyLogoText">
+            <Link>
+              <img
+                width={50}
+                height={50}
+                style={{ marginTop: 5 }}
+                src="./Images/spizellaLogo.JPG"
+                to="/"
+              />
+            </Link>
 
-          <Link
-            className="navbar-brand  mx-1"
-            style={{ fontWeight: "bold", marginRight: "10px" }}
-            to="/"
-          >
-            <div>
-              <h1 style={{ fontWeight: "bold", marginRight: "50px" }}>
-                Spizella
-              </h1>
-            </div>
-          </Link>
+            <Link
+              className="navbar-brand  mx-1"
+              style={{ fontWeight: "bold", marginRight: "10px" }}
+              to="/"
+            >
+              <div>
+                <h1 style={{ fontWeight: "bold", marginRight: "50px" }}>
+                  Spizella
+                </h1>
+              </div>
+            </Link>
+          </div>
+
           <button
             className="navbar-toggler"
             type="button"
