@@ -96,7 +96,7 @@ export default function Contact() {
               WRITE US
             </div>
 
-            <form ref={form} onSubmit={handleSubmit}>
+            <form ref={form}>
               <div>
                 <label style={{ fontSize: "18px" }}>
                   <strong>Name</strong>
@@ -112,7 +112,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label for="email" style={{ fontSize: "18px" }}>
+                <label style={{ fontSize: "18px" }}>
                   <strong>Email</strong>
                 </label>
                 <input
@@ -133,7 +133,7 @@ export default function Contact() {
 
               <div>
                 <div>
-                  <labelc style={{ fontSize: "18px" }}>
+                  <label style={{ fontSize: "18px" }}>
                     <strong>Phone Number</strong>
                     <PhoneInput
                       name="phone_number"
@@ -144,7 +144,7 @@ export default function Contact() {
                       value={PhoneNumber}
                       onChange={handlePhone}
                     ></PhoneInput>
-                  </labelc>
+                  </label>
                 </div>
                 {!Valid && (
                   <p style={{ color: "Red", fontWeight: "bold" }}>
@@ -154,7 +154,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label for="subject" style={{ fontSize: "18px" }}>
+                <label style={{ fontSize: "18px" }}>
                   <strong>Subject</strong>
                 </label>
                 <input

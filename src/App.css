@@ -98,7 +98,7 @@
   flex-wrap: wrap;
   column-gap: 30px;
   overflow-y: scroll;
-  height: 500px;
+  min-height: 500px;
 }
 
 .next{
@@ -212,7 +212,7 @@
  font-weight: bold;
  color:rgb(8, 0, 0);  
  font-size: 18px;
- height: 450px;
+ min-height: 450px;
  overflow-y: scroll;
  width: auto; 
 }
