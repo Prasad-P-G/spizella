@@ -32,7 +32,7 @@ export default function Security_Solutuions() {
 
   return (
     <>
-      <div className="heading">Security Solutions</div>
+      <div className="heading">Software Development & Services</div>
       <div className="app-container">
         <SecurityFamilyGroup
           securityFamilies={SoftwareDevServiceyFamily}

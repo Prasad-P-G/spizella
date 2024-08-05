@@ -85,9 +85,13 @@ export default function Contact() {
 
   return (
     <>
-      <div className="sub-heading">Contact</div>
-      <div className="ContainerItems">
-        <div>
+      <div className="sub-heading" style={{ marginTop: "10px" }}>
+        Contact
+      </div>
+      {/* <div className="ContainerItems"> */}
+      <div className="row">
+        {/* form fields */}
+        <div className="col">
           {/* <div> */}
           <div
             className="contactHeading"
@@ -96,7 +100,7 @@ export default function Contact() {
             WRITE US
           </div>
 
-          <form ref={form}>
+          <form ref={form} className="formStyle">
             <div>
               <label style={{ fontSize: "18px" }}>
                 <strong>Name</strong>
@@ -109,8 +113,8 @@ export default function Contact() {
                 className="form-control"
                 onChange={handleName}
                 style={{
-                  width: "300px",
                   fontWeight: "bold",
+                  maxWidth: "300px",
                 }}
               ></input>
             </div>
@@ -121,7 +125,7 @@ export default function Contact() {
               </label>
               <input
                 name="from_email"
-                style={{ width: "300px", fontWeight: "bold" }}
+                style={{ fontWeight: "bold", maxWidth: "300px" }}
                 type="email"
                 placeholder="Enter Email Address"
                 onChange={handleEmail}
@@ -129,7 +133,14 @@ export default function Contact() {
                 className="form-control"
               ></input>
               {!ValidEmail && (
-                <p style={{ color: "Red", fontWeight: "bold", height: "10px" }}>
+                <p
+                  style={{
+                    color: "Red",
+                    fontWeight: "bold",
+                    height: "auto",
+                    fontSize: "14px",
+                  }}
+                >
                   Please enter a valid email
                 </p>
               )}
@@ -151,7 +162,14 @@ export default function Contact() {
                 </label>
               </div>
               {!Valid && (
-                <p style={{ color: "Red", fontWeight: "bold", height: "10px" }}>
+                <p
+                  style={{
+                    color: "Red",
+                    fontWeight: "bold",
+                    height: "auto",
+                    fontSize: "14px",
+                  }}
+                >
                   Please enter a valid phone number
                 </p>
               )}
@@ -168,7 +186,7 @@ export default function Contact() {
                 value={Subject}
                 className="form-control"
                 onChange={handleSubject}
-                style={{ fontWeight: "bold" }}
+                style={{ fontWeight: "bold", maxWidth: "500px" }}
               ></input>
             </div>
 
@@ -184,7 +202,7 @@ export default function Contact() {
                 placeholder="Enter Description"
                 className="form-control"
                 onChange={handleDescription}
-                style={{ fontWeight: "bold" }}
+                style={{ fontWeight: "bold", maxWidth: "500px" }}
               ></textarea>
             </div>
             <div className="btnSend">
@@ -201,17 +219,108 @@ export default function Contact() {
         </div>
 
         {/* divider */}
-        <div
-          className="vr"
+        {/* <div
+          className="col col-md-auto"
           style={{ height: "200px", margin: "20px", width: "10px" }}
-        ></div>
+        ></div> */}
 
         {/* Contact Information */}
-        <div>
-          {/* site */}
-          <div className="contactInfo">
-            <Icon.Globe className="iconStyle" size={30}></Icon.Globe>
-            <h3
+        <div className="col">
+          <h3
+            style={{
+              fontSize: "20PX",
+              fontWeight: "bold",
+            }}
+          >
+            Address
+          </h3>
+
+          <div className="row">
+            {/* site */}
+            <div className="col col-sm-6">
+              <Icon.Globe className="iconStyle" size={20}></Icon.Globe>
+              <span
+                style={{
+                  fontSize: "16PX",
+                  fontWeight: "bold",
+                  filter: !Valid || !ValidEmail ? "blur(8px)" : "none",
+                }}
+              >
+                {" "}
+                : www.spizellaindia.com
+              </span>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col col-sm-6">
+              <Icon.EnvelopeArrowUp
+                className="iconStyle"
+                size={20}
+              ></Icon.EnvelopeArrowUp>
+              <span
+                style={{
+                  fontSize: "16PX",
+                  fontWeight: "bold",
+                  filter: !Valid || !ValidEmail ? "blur(8px)" : "none",
+                }}
+              >
+                {" "}
+                : info@spizellaindia.com
+              </span>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col col-sm-6">
+              <Icon.TelephoneOutbound
+                className="iconStyle"
+                size={20}
+              ></Icon.TelephoneOutbound>
+              <span
+                style={{
+                  fontSize: "16PX",
+                  fontWeight: "bold",
+                  filter: !Valid || !ValidEmail ? "blur(8px)" : "none",
+                }}
+              >
+                {" "}
+                : +91-6364302933
+              </span>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col col-sm-6">
+              <Icon.GeoAltFill
+                className="iconStyle"
+                size={20}
+              ></Icon.GeoAltFill>
+              <span
+                style={{
+                  fontSize: "16PX",
+                  fontWeight: "bold",
+                  filter: !Valid || !ValidEmail ? "blur(8px)" : "none",
+                }}
+              >
+                {" "}
+                : Dharwad,Karnataka,India-580004
+              </span>
+            </div>
+          </div>
+
+          {/* <div
+              className="col"
+              style={{
+                fontSize: "16PX",
+                fontWeight: "bold",
+                filter: !Valid || !ValidEmail ? "blur(8px)" : "none",
+              }}
+            >
+              <span> : www.spizellaindia.com</span>
+            </div> */}
+
+          {/* <h3
               style={{
                 fontSize: "20PX",
                 fontWeight: "bold",
@@ -219,12 +328,13 @@ export default function Contact() {
               }}
             >
               : www.spizellaindia.com
-            </h3>
-          </div>
+            </h3> */}
+        </div>
+      </div>
 
-          {/* email address */}
+      {/* email address */}
 
-          <div className="contactInfo">
+      {/* <div className="contactInfo">
             <Icon.EnvelopeArrowUp
               className="iconStyle"
               size={30}
@@ -238,10 +348,10 @@ export default function Contact() {
             >
               : info@spizellaindia.com
             </h3>
-          </div>
+          </div> */}
 
-          {/* phone */}
-          <div className="contactInfo">
+      {/* phone */}
+      {/* <div className="contactInfo">
             <Icon.TelephoneOutbound
               className="iconStyle"
               size={30}
@@ -255,10 +365,10 @@ export default function Contact() {
             >
               : +91-9988669910
             </h3>
-          </div>
+          </div> */}
 
-          {/* locaton / address */}
-          <div className="contactInfo">
+      {/* locaton / address */}
+      {/* <div className="contactInfo">
             <Icon.GeoAltFill className="iconStyle" size={30}></Icon.GeoAltFill>
             <h3
               style={{
@@ -269,9 +379,7 @@ export default function Contact() {
             >
               : Dharwad,Karnataka,India-580004
             </h3>
-          </div>
-        </div>
-      </div>
+          </div> */}
     </>
   );
 }

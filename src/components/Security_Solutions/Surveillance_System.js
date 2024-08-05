@@ -41,7 +41,7 @@ export default function Surveillance_System() {
 
   return (
     <>
-      <div>
+      <div className="SurveillanceSystem">
         <div className="sub-heading">Surveillance System</div>
         <div className="DescText">
           <div>
@@ -56,8 +56,8 @@ export default function Surveillance_System() {
               placement of security cameras within the workplace. These laws
               vary from state to state, so be sure to contact your state’s labor
               agency to learn what your restrictions are.
-            </p>
-            <p>
+              <br></br>
+              <br />
               Footage can be monitored live by a security guard, monitored
               remotely if using an IP camera and system (more on that in a
               moment) by a monitoring company, or can simply be recorded and

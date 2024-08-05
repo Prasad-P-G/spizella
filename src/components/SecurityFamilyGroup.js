@@ -11,13 +11,20 @@ export default function SecurityFamilyGroup({
         {securityFamilies.map((text, index) => {
           return (
             <>
-              <div className="flex flex-col" style={{ borderRadius: "20px" }}>
+              <div
+                className="flex flex-col"
+                style={{
+                  borderRadius: "20px",
+                  textAlign: "center",
+                  padding: "0",
+                }}
+              >
                 <button
-                  style={{ width: "300px", fontWeight: "bold" }}
+                  style={{ textAlign: "center" }}
                   className={isSelected == index ? "selected-button" : "button"}
                   onClick={() => setIsSelected(index)}
                 >
-                  {text}
+                  <div className="groupButton">{text}</div>
                 </button>
               </div>
             </>

@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-*{
-  background-color:#6886e2;
-  font-family: 'Courier New', Courier, monospace;
+* {
+  background-color: #6886e2;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .App-logo {
@@ -42,144 +42,148 @@
   }
 }
 
-.companyLogoText{
+.companyLogoText {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.navbar{
+.navbar {
   background-color: #4c4d95;
   border-radius: 10px;
   padding: 5px;
 }
-.navbar-nav li{
+.navbar-nav li {
   background-color: #0c2c68;
-  margin-left : 5px;
+  margin-left: 5px;
   width: 150px;
   text-align: center;
   margin-bottom: 3px;
   font-size: medium;
-  font-stretch:extra-expanded;
+  font-stretch: extra-expanded;
   font-weight: bold;
   color: rgb(58, 38, 38);
   text-wrap: wrap;
 }
 .navbar-nav li :hover {
-  
-  font-weight: bold;  
+  font-weight: bold;
   font-size: 18px;
 }
 
 .navbar-nav li :active {
-  
-  font-weight: bold;  
+  font-weight: bold;
   font-size: 18px;
   background-color: #49608f;
 }
 .navbar-nav li :focus {
-  
-  font-weight: bold;  
+  font-weight: bold;
   font-size: 18px;
   background-color: #49608f;
 }
 
-.dropdown-menu ul{
+.dropdown-menu ul {
   list-style: none;
-  padding: 0;  
-}
-.dropdown-menu li {
-  width: 200px;
-  word-wrap: normal;
+  padding: 0;
+  background: #484aba;
 }
 
-.button-container .selected-button:hover{
-  font-weight: bold;  
+.button-container .selected-button:hover {
+  font-weight: bold;
   font-size: 15px;
-} 
+}
 
 .app-container {
-  margin-top: 30px;   
+  margin-top: 30px;
   align-items: start;
-  display: flex;  
+  display: flex;
   margin-left: 10px;
 }
 
-.imgBuilder{
-  display: flex;  
+.imgBuilder {
+  display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
-  overflow-y: scroll;
-  min-height: 500px;
+  column-gap: 2px;
 }
 
-.next{
+.imagebuilderTest {
   display: flex;
-  align-items:center; 
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* imageBuilderText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  } */
+
+.next {
+  display: flex;
+  align-items: center;
   align-items: end;
   border-radius: 15px;
   padding-right: 50px;
   justify-content: flex-end;
   height: 30px;
-   
 }
 .next a {
   color: white;
-  background: #484aba;  
+  background: #484aba;
 }
 .next a:hover {
   color: rgb(9, 4, 34);
-  background: #484aba;  
+  background: #484aba;
   font-weight: bold;
 }
- 
 
-
-.button-container .selected-button{
-   width: 300px;
-   background-color: rgba(124, 22, 29, 0.267)
+.button-container .selected-button {
+  max-width: 300px;
+  background-color: rgba(124, 22, 29, 0.267);
 }
 
-.button-container .selected-button:active{
-  background:rgb(12, 19, 27);
+.button-container .selected-button:active {
+  background: rgb(12, 19, 27);
   color: white;
 }
 
-.button-container .selected-button{
-  background:rgb(12, 19, 27);
+.button-container .selected-button {
+  background: rgb(12, 19, 27);
   color: white;
-  margin: 5px;
+  margin: 2px;
   border-radius: 20px;
 }
 
 /* .button-container .button {
-  margin-top: 10;
-} */
-.button{
+    margin-top: 10;
+  } */
+.button {
   border-radius: 20px;
 }
 
-.button-container .selected-button::after{
-  background:rgb(12, 19, 27);
+.button-container .selected-button::after {
+  background: rgb(12, 19, 27);
   color: white;
 }
 
-.button-container .selected-button:hover{
-  background:rgb(91, 122, 227);
+.button-container .selected-button:hover {
+  background: rgb(91, 122, 227);
   color: white;
 }
-.button-container .button:hover{
-  background:rgb(12, 19, 27);
+.button-container .button:hover {
+  background: rgb(12, 19, 27);
   color: white;
 }
- 
+
 .dropdown-menu {
   padding: 0;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 23)
 }
+
+/* background-color: #49608f; */
 .dropdown-menu li :hover {
   background-color: #49608f;
 }
-.navbar-nav li.Selected{
+.navbar-nav li.Selected {
   background-color: #c51682;
 }
 
@@ -188,113 +192,124 @@
   margin: 5px;
 }
 
-.nav-item{
+.nav-item {
   border-radius: 20px;
 }
 
-.dropdown-menu li{
+.dropdown-menu li ul {
   border-radius: 20px;
 }
-.sub-heading{
-  width: auto;
+
+.sub-heading {
   color: white;
-  margin-bottom:10px;   
+  margin-bottom: 10px;
   padding-right: 3px;
   background-color: #484aba;
   font-size: 25px;
   font-weight: bold;
 }
-.heading{
+
+.sub-heading1 {
+  color: white;
+  margin-bottom: 10px;
+  padding-left: 3px;
+  background-color: #484aba;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.heading {
   width: auto;
   color: white;
-  margin:5px;
+  margin: 5px;
   background-color: #484aba;
   font-size: 30px;
   font-weight: bold;
 }
-.DescText{
+.DescText {
   font-weight: bold;
- color:rgb(8, 0, 0);  
- font-size: 18px;
- width: auto; 
+  color: rgb(8, 0, 0);
 }
 
-.imgText{
-  width: 200px;
-  color: rgb(8, 0, 0);   
-  font-size: 18px;
+.cyberBlock {
   font-weight: bold;
-  align-items: center;
-  text-wrap: wrap ;
-  align-content: center;
+  color: rgb(8, 0, 0);
+  font-size: 18px;
+  min-height: 450px;
+  overflow-y: scroll;
+  width: auto;
+}
+.visionMission {
+  font-weight: bold;
+  color: rgb(8, 0, 0);
+  font-size: 18px;
+  width: auto;
+}
+.customContainer {
+  font-weight: bold;
+  color: rgb(8, 0, 0);
+  font-size: 18px;
+  min-height: 450px;
+}
+
+.imageBuild {
+  border-radius: 20px;
+  max-width: 200px;
+  min-height: fit-content;
+}
+.imgText {
+  color: rgb(8, 0, 0);
+  max-width: 200px;
+  font-weight: bold;
   margin-top: 5px;
   text-align: center;
+  text-wrap: wrap;
+  font-size: 16px;
 }
-
-.cyberBlock{
- font-weight: bold;
- color:rgb(8, 0, 0);  
- font-size: 18px;
- min-height: 450px;
- overflow-y: scroll;
- width: auto; 
-}
-.visionMission{
-  font-weight: bold;
-  color:rgb(8, 0, 0);  
-  font-size: 18px;
-  width: auto; 
-}
-.customContainer{
-  font-weight: bold;
- color:rgb(8, 0, 0);  
- font-size: 18px;
- min-height: 450px;
-}
-
-.imageBuild{
+.test img {
   border-radius: 20px;
+  width: 100%;
+  height: auto;
 }
 
-img{
+/* .imgBuilder img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+  } */
+div {
   border-radius: 20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  padding-right: 3px;
 }
 
-div{
-  border-radius: 20px;
- padding-left: 3px;
- padding-top: 1px;
- padding-right: 3px;
-}
-
-.paraConatainer
-{
+.paraConatainer {
   padding-top: 10px;
 }
-.othersContainer{
+.othersContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   font-size: 30x;
-  }
+}
 
-  .othersContainer li{
-    margin-left: 30px;
-    font-size: 20px;
-  }
+.othersContainer li {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
 
-  .othersContainer li:hover{
-    font-size: 18px;
-    background-color: #4e586a;
-  }
+.othersContainer li:hover {
+  font-size: 18px;
+  background-color: #4e586a;
+}
 
-.customContainer
-.imgCyber{
+.customContainer .imgCyber {
   width: 100%;
 }
 
- 
 .text-block {
   position: absolute;
   bottom: 20px;
@@ -304,63 +319,1068 @@ div{
   padding-left: 20px;
   padding-right: 20px;
 }
-.carouselContainer  h3 {
+.carouselContainer h3 {
   color: rgb(18, 17, 17);
   font-weight: bolder;
 }
-.carouselContainer  p {
+.carouselContainer p {
   color: rgb(18, 17, 17);
   font-weight: bolder;
 }
-.contactHeading{
- display: flex;
- justify-content: center;
- align-items: center;
- font-weight: bold;
- font-size: 50;
+.contactHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 50;
 }
-.btnSend{
-  display: flex;  
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btnSend {
+  display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-.ContainerItems{
-  display: flex;  
+.ContainerItems {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
-.submitButton{
+.submitButton {
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
 }
-Form.Label{
+Form.Label {
   font-weight: bold;
 }
-.contactInfo{
+.contactInfo {
   display: flex;
   font-weight: bold;
-  filter : "blur(8px)"
+  filter: "blur(8px)";
 }
 
-.contactInfo h3{
-  filter : "blur(8px)"
+.contactInfo h3 {
+  filter: "blur(8px)";
 }
-.contactInfo{
- margin: 10px;
+.contactInfo {
+  margin: 10px;
 }
-.iconStyle{
-  margin-right: 5px
+.iconStyle {
+  margin-right: 5px;
 }
 
 .feedbackForm div {
   margin-bottom: 5px;
 }
-.buttonSend{
+.buttonSend {
   font-weight: bold;
   background-color: green;
   font-size: 20;
 }
-.buttonSend:hover{
+.buttonSend:hover {
   background-color: yellowgreen;
+}
+
+.formClass {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.Customercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+}
+
+.formClass {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.send {
+  width: 50%;
+}
+.title {
+  width: 1%;
+  background-color: black;
+}
+.compo {
+  width: 49%;
+}
+
+.button-container .btnText {
+  text-wrap: wrap;
+}
+
+body {
+  img {
+    border-radius: 20px;
+  }
+  p {
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 5px;
+  }
+  h3 {
+    border-radius: 20px;
+  }
+  .carousel-caption {
+    background: none;
+  }
+  body {
+    .sub-heading {
+      font-size: 14px;
+      margin-top: -20px;
+      padding-left: 10px;
+    }
+    .heading {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  }
+}
+
+/************************************************************/
+
+@media only screen and (min-width: 100px) {
+  /*#region Customer SD */
+  .customContainer {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  /*#endregion Customer SD */
+
+  /*#region Other services */
+  .otherServices {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    li {
+      font-size: 8px;
+    }
+    li:hover {
+      font-size: 8px;
+    }
+  }
+  /*#endregion Other services */
+
+  /*#region Survellience system */
+  .SurveillanceSystem {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    p {
+      margin-top: -10px;
+      margin-left: -20px;
+    }
+  }
+
+  /*#endregion Survellience system */
+
+  /*#region Cyber sercurity system */
+  .cyberSecurity {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    p {
+      margin-top: -10px;
+      margin-left: -20px;
+    }
+    .customContainer {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      p {
+        margin-top: 2px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  /*#endregion Survellience system */
+
+  /*region Access Control system */
+
+  .accessSecurity {
+    .sub-heading {
+      font-size: 14px;
+    }
+  }
+
+  .securitySolutions {
+    .heading {
+      font-size: 20px;
+    }
+  }
+
+  .button-container {
+    button {
+      width: 100x;
+    }
+    .groupButton {
+      font-size: 12px;
+    }
+  }
+
+  .imgBuilder {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .imgText {
+      width: 100px;
+      font-size: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  /*#endregion Access Control system*/
+
+  /*#region Vision*/
+  .MainContainer {
+    p {
+      font-size: 12px;
+    }
+    li {
+      font-size: 12px;
+    }
+    .sub-heading1 {
+      font-size: 18px;
+      font-weight: bold;
+      padding: "0";
+    }
+    .sub-heading {
+      font-size: 20px;
+    }
+  }
+  /*#endregion */
+
+  /*#region NavBar Layout*/
+
+  /*#region NavBar Layout*/
+
+  body {
+    p {
+      font-size: 12px;
+    }
+  }
+  .navbar li {
+    width: 100px;
+    font-size: 12px;
+  }
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar button {
+    max-width: 50px;
+  }
+
+  .navbar img {
+    width: 25px;
+    height: 25px;
+  }
+  .navbar .companyLogoText {
+    div {
+      font-size: 20px;
+      text-align: center;
+    }
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .companyLogoText {
+    div {
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .dropdown-menu li {
+    width: 150px;
+    height: auto;
+    font-size: 10px;
+    text-align: start;
+  }
+
+  .dropdown-menu {
+    width: 150px;
+    background: red;
+  }
+  .dropdown-menu ul {
+    width: 150px;
+    height: auto;
+  }
+  /*#endregion NavBar Layout*/
+
+  /*#region Home - Carousel*/
+
+  .carousel {
+    max-height: auto;
+  }
+  .carousel img {
+    width: 50px;
+    min-height: 40px;
+  }
+
+  .carousel-caption {
+    top: 150px;
+    height: auto;
+  }
+
+  .carousel p {
+    font-size: 12px;
+    text-align: left;
+    margin: 0 0.5em;
+  }
+
+  .carousel-caption h3 {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+  }
+  .Carousel-Item {
+    max-height: auto;
+    background: #d5eb0a;
+  }
+
+  .carousel {
+    img {
+      height: 500px;
+    }
+  }
+  .carouselContainer {
+    background: rgb(25, 205, 19);
+    height: 600px;
+  }
+
+  /*#endregion Home - Carousel*/
+}
+
+/**********************************************************/
+
+/******************************************************************************/
+@media only screen and (min-width: 200px) {
+  body {
+    .sub-heading {
+      font-size: 14px;
+      margin-top: -20px;
+      padding-left: 10px;
+    }
+    .heading {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  }
+
+  /*#region Customer SD */
+  .customContainer {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  /*#endregion Customer SD */
+
+  /*#region Other services */
+  .otherServices {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    li {
+      font-size: 8px;
+      width: auto;
+    }
+    li:hover {
+      font-size: 8px;
+    }
+  }
+  /*#endregion Other services */
+  /*#region Survellience system */
+  .SurveillanceSystem {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    p {
+      margin-top: -10px;
+      margin-left: -20px;
+    }
+  }
+
+  /*#endregion Survellience system */
+
+  /*#region Cyber sercurity system */
+  .cyberSecurity {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    p {
+      margin-top: -10px;
+      margin-left: -20px;
+      width: auto;
+    }
+    .customContainer {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      p {
+        margin-top: 2px;
+      }
+    }
+  }
+
+  /*#endregion Survellience system */
+
+  /*region Access Control system */
+
+  .accessSecurity {
+    .sub-heading {
+      font-size: 14px;
+    }
+  }
+
+  .securitySolutions {
+    .heading {
+      font-size: 20px;
+    }
+  }
+
+  .button-container {
+    button {
+      width: 80px;
+    }
+    .groupButton {
+      font-size: 8px;
+    }
+  }
+
+  .imgBuilder {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .imgText {
+      width: 50px;
+      font-size: 6px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  /*#endregion Access Control system*/
+
+  /*#region Vision*/
+  .MainContainer {
+    p {
+      font-size: 12px;
+    }
+    li {
+      font-size: 12px;
+    }
+    .sub-heading1 {
+      font-size: 18px;
+      font-weight: bold;
+      padding: "0";
+    }
+    .sub-heading {
+      font-size: 20px;
+    }
+  }
+  /*#endregion */
+
+  /*#region NavBar Layout*/
+
+  /*#region NavBar Layout*/
+
+  body {
+    p {
+      font-size: 12px;
+    }
+  }
+  .navbar li {
+    width: 100px;
+    font-size: 12px;
+  }
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar button {
+    max-width: 50px;
+  }
+
+  .navbar img {
+    width: 25px;
+    height: 25px;
+  }
+  .navbar .companyLogoText {
+    div {
+      font-size: 20px;
+      text-align: center;
+    }
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .companyLogoText {
+    div {
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .dropdown-menu li {
+    width: 150px;
+    height: auto;
+    font-size: 10px;
+    text-align: start;
+  }
+
+  .dropdown-menu {
+    width: 150px;
+    background: red;
+  }
+  .dropdown-menu ul {
+    width: 150px;
+    height: auto;
+  }
+  /*#endregion NavBar Layout*/
+
+  /*#region Home - Carousel*/
+
+  .carousel {
+    max-height: auto;
+  }
+  .carousel img {
+    width: 50px;
+    min-height: 40px;
+  }
+
+  .carousel-caption {
+    top: 150px;
+    height: auto;
+  }
+
+  .carousel p {
+    font-size: 12px;
+    text-align: left;
+    margin: 0 0.5em;
+  }
+
+  .carousel-caption h3 {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+  }
+  .Carousel-Item {
+    max-height: auto;
+    background: #d5eb0a;
+  }
+
+  .carousel {
+    img {
+      height: 500px;
+    }
+  }
+  .carouselContainer {
+    background: rgb(25, 205, 19);
+    height: 600px;
+  }
+
+  /*#endregion Home - Carousel*/
+}
+
+@media only screen and (min-width: 300px) {
+  body {
+    .sub-heading {
+      font-size: 14px;
+      margin-top: -20px;
+      padding-left: 10px;
+    }
+    .heading {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  }
+
+  /*#region Customer SD */
+  .customContainer {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  /*#endregion Customer SD */
+
+  /*#region Other services */
+  .otherServices {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    li {
+      font-size: 10px;
+      text-wrap: wrap;
+    }
+    li:hover {
+      font-size: 12px;
+    }
+  }
+  /*#endregion Other services */
+
+  /*#region Access Control system */
+
+  .accessSecurity {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    p {
+      margin-top: -10px;
+      margin-left: -20px;
+    }
+  }
+  .securitySolutions {
+    .heading {
+      font-size: 16px;
+    }
+  }
+  .button-container {
+    button {
+      width: 100px;
+      margin-left: -20px;
+    }
+    .groupButton {
+      font-size: 8px;
+    }
+  }
+
+  .imgBuilder {
+    img {
+      width: 50px;
+      height: 50px;
+      margin-top: 2px;
+      gap: 2px;
+    }
+
+    .imgText {
+      max-width: 100px;
+      font-size: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  /*#endregion Access Control system*/
+
+  /*#region Survellience system */
+  .SurveillanceSystem {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    p {
+      margin-top: -10px;
+      margin-left: -20px;
+    }
+  }
+
+  /*#endregion Survellience system */
+
+  /*#region Cyber sercurity system */
+  .cyberSecurity {
+    .sub-heading {
+      font-size: 12px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    p {
+      margin-top: -10px;
+      margin-left: -20px;
+    }
+    .customContainer {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      p {
+        margin-top: -5px;
+        margin-left: 0px;
+      }
+    }
+  }
+
+  /*#endregion Survellience system */
+  /*#region Vision*/
+  .MainContainer {
+    p {
+      font-size: 12px;
+    }
+    li {
+      font-size: 12px;
+    }
+    .sub-heading1 {
+      font-size: 18px;
+      font-weight: bold;
+      padding: "0";
+    }
+    .sub-heading {
+      font-size: 20px;
+    }
+  }
+  /*#endregion */
+
+  /*#region NavBar Layout*/
+
+  .navbar li {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .navbar li:hover {
+    font-size: 12px;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar button {
+    max-width: 50px;
+  }
+
+  .navbar img {
+    width: 25px;
+    height: 25px;
+  }
+  .navbar .companyLogoText {
+    div {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .companyLogoText {
+    img {
+      height: 10px;
+      width: 10px;
+    }
+  }
+
+  .companyLogoText {
+    div {
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .dropdown-menu li {
+    width: 150px;
+    height: auto;
+    font-size: 10px;
+    text-align: start;
+  }
+
+  .dropdown-menu {
+    width: 150px;
+    background: red;
+  }
+  .dropdown-menu ul {
+    width: 150px;
+    height: auto;
+  }
+  /*#endregion NavBar Layout*/
+
+  /*#region Home - Carousel*/
+
+  .carousel {
+    max-height: auto;
+  }
+  .carousel img {
+    width: 50px;
+    min-height: 40px;
+  }
+
+  .carousel-caption {
+    top: 150px;
+    height: auto;
+  }
+
+  .carousel p {
+    font-size: 12px;
+    text-align: left;
+    margin: 0 0.5em;
+  }
+
+  .carousel-caption h3 {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+  }
+  .Carousel-Item {
+    max-height: auto;
+    background: #d5eb0a;
+  }
+
+  .carousel {
+    img {
+      height: 500px;
+    }
+  }
+  .carouselContainer {
+    background: rgb(25, 205, 19);
+    height: 600px;
+  }
+
+  /*#endregion Home - Carousel*/
+}
+
+/****************************************************************************/
+
+@media only screen and (min-width: 768px) {
+  body {
+    p {
+      font-size: 16px;
+    }
+    .sub-heading {
+      font-size: 25px;
+    }
+    .heading {
+      font-size: 30px;
+    }
+  }
+
+  /*#region Customer SD */
+  .customContainer {
+    img {
+      width: 400px;
+      height: 100px;
+    }
+  }
+  /*#endregion Customer SD */
+
+  /*#region Other services */
+  .otherServices {
+    .sub-heading {
+      font-size: 25px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    li {
+      font-size: 16px;
+      text-wrap: wrap;
+    }
+    li:hover {
+      font-size: 12px;
+    }
+  }
+  /*#endregion Other services */
+
+  /*#region Cyber sercurity system */
+  .cyberSecurity {
+    .sub-heading {
+      font-size: 25px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+    .customContainer {
+      img {
+        width: 600px;
+        height: 100px;
+      }
+    }
+  }
+  /*#endregion Cyber sercurity system */
+
+  /*#region Survellience system */
+  .SurveillanceSystem {
+    .sub-heading {
+      font-size: 25px;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+  }
+  /*#endregion Survellience system */
+
+  /*#region Access Control system */
+
+  .accessSecurity {
+    .sub-heading {
+      font-size: 25px;
+    }
+  }
+
+  .securitySolutions {
+    .heading {
+      font-size: 30px;
+    }
+  }
+
+  .button-container {
+    button {
+      width: 300px;
+      font-weight: bold;
+    }
+    .groupButton {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  .imgBuilder {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .imgText {
+      width: 200px;
+      text-align: center;
+      font-size: 12px;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+  }
+
+  /*#region NavBar Layout*/
+
+  .navbar .companyLogoText {
+    div {
+      font-size: 30px;
+      text-align: center;
+    }
+    img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+  .navbar li {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .navbar button {
+    max-width: 200px;
+  }
+
+  .navbar {
+    width: auto;
+  }
+  .navbar img {
+    width: auto;
+    height: auto;
+  }
+  .dropdown-menu li {
+    width: 200px;
+    height: auto;
+    font-size: 14px;
+    text-align: start;
+  }
+
+  .dropdown-menu {
+    width: 200px;
+    background: red;
+  }
+  .dropdown-menu ul {
+    width: 200px;
+    height: auto;
+  }
+  /*#endregion NavBar Layout*/
+
+  /*#region Home - Carousel*/
+
+  .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 24px;
+  }
+  .carousel-caption {
+    top: 200px;
+    max-height: 600px;
+  }
+
+  .Carousel.Item {
+    max-height: 500px;
+    background: #d5eb0a;
+  }
+
+  .carousel {
+    img {
+      height: 500px;
+    }
+  }
+  .carouselContainer {
+    background: rgb(25, 205, 19);
+    height: 600px;
+  }
+
+  /*#endregion Home - Carousel*/
+
+  /*#region Vison*/
+  .MainContainer {
+    p {
+      font-size: 18px;
+    }
+    li {
+      font-size: 18px;
+    }
+    .sub-heading1 {
+      font-size: 24px;
+      font-weight: bold;
+      padding: "0";
+    }
+    .sub-heading {
+      font-size: 30px;
+    }
+  }
+  /*#endregion Vison */
+}
+
+.dropdown-menu li {
+  max-width: 200px;
+  text-wrap: wrap;
 }

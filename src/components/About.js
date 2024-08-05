@@ -3,11 +3,11 @@ import React from "react";
 export default function About() {
   return (
     <>
-      <div className="sub-heading">Vision and Mission</div>
+      <div className="sub-heading mt-2">Vision and Mission</div>
       <div className="container flex ">
         <div className="MainContainer">
           <div className="Vision">
-            <div className="sub-heading" style={{ color: "black" }}>
+            <div className="sub-heading1 mt-1" style={{ color: "black" }}>
               Vision
             </div>
             <p className="visionMission">
@@ -19,7 +19,7 @@ export default function About() {
             </p>
           </div>
           <div className="visionMission">
-            <div className="sub-heading" style={{ color: "black" }}>
+            <div className="sub-heading1" style={{ color: "black" }}>
               Mission
             </div>
             <p>
@@ -28,7 +28,7 @@ export default function About() {
             </p>
           </div>
           <div className="Achivements">
-            <div className="sub-heading" style={{ color: "black" }}>
+            <div className="sub-heading1" style={{ color: "black" }}>
               Achievements
             </div>
             <ul className="visionMission">

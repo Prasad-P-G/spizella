@@ -13,29 +13,31 @@ export default function Navbar() {
         <div className="container-fluid">
           {/* company Logo */}
           <div className="companyLogoText">
-            <Link>
+            <Link to="/">
               <img
-                width={50}
-                height={50}
-                style={{ marginTop: 5 }}
-                src="./Images/spizellaLogo.JPG"
-                to="/"
+                style={{
+                  margin: 5,
+                  width: "50px",
+                  height: "50px",
+                  borderRadius: "10px",
+                }}
+                src="./Images/Spizella_Logo.JPG"
+                alt="Spizella India Pvt. Ltd."
               />
             </Link>
 
             <Link
               className="navbar-brand  mx-1"
-              style={{ fontWeight: "bold", marginRight: "10px" }}
+              style={{ fontWeight: "bold", marginRight: "5px" }}
               to="/"
             >
               <div>
-                <h1 style={{ fontWeight: "bold", marginRight: "50px" }}>
+                <div style={{ fontWeight: "bold", marginRight: "50px" }}>
                   Spizella
-                </h1>
+                </div>
               </div>
             </Link>
           </div>
-
           <button
             className="navbar-toggler"
             type="button"
@@ -82,13 +84,19 @@ export default function Navbar() {
                 >
                   Products
                 </a>
-                <div className="dropdown-menu">
+                <div
+                  className="dropdown-menu"
+                  style={{ background: "#484aba" }}
+                >
                   <ul>
                     <li>
                       <Link
                         className="dropdown-item"
                         to="/SecuritySolution"
-                        style={{ color: "white" }}
+                        style={{
+                          color: "white",
+                          textWrap: "wrap",
+                        }}
                       >
                         Security Solutions
                       </Link>
@@ -108,13 +116,19 @@ export default function Navbar() {
                 >
                   Services
                 </a>
-                <div className="dropdown-menu">
+                <div
+                  className="dropdown-menu"
+                  style={{ background: "#484aba" }}
+                >
                   <ul>
-                    <li style={{ width: "350px" }}>
+                    <li>
                       <Link
                         className="dropdown-item"
                         to="/softwareDevelopmentServices"
-                        style={{ color: "white" }}
+                        style={{
+                          color: "white",
+                          textWrap: "wrap",
+                        }}
                       >
                         Software Development & Services
                       </Link>

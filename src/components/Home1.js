@@ -4,29 +4,30 @@ import Carousel from "react-bootstrap/Carousel";
 export default function Home() {
   return (
     <div>
-      <Carousel style={{ maxWidth: "100%", height: "auto" }}>
-        <Carousel.Item style={{ maxWidth: "100%", maxHeight: "600px" }}>
-          <div className="row">
-            <div className="col col-mid-6">
-              <img
-                src="./Images/access_control_system.JPG"
-                className="d-block w-100 h-100"
-              ></img>
-            </div>
-            <div className="col col-mid-4">
-              <img
-                src="./Images/Full_Height_2 Line Turnstile.JPG"
-                className="d-block w-100"
-              ></img>
+      <Carousel className="carouselContainer">
+        <Carousel.Item>
+          {/* <h2 style={{ fontWeight: "bold" }}>Security Solutions</h2> */}
+          <div className="sub-heading">Security Solutions</div>
+          <div className="container">
+            <div className="row">
+              <div className="col col-mid-6">
+                <img
+                  style={{ minHeight: "60vh" }}
+                  src="./Images/access_control_system.JPG"
+                  className="d-block w-100"
+                ></img>
+              </div>
+              <div className="col col-mid-4">
+                <img
+                  style={{ minHeight: "60vh" }}
+                  src="./Images/Full_Height_2 Line Turnstile.JPG"
+                  className="d-block w-100"
+                ></img>
+              </div>
             </div>
           </div>
-          <Carousel.Caption
-            style={{
-              Width: "100%",
-              maxHeight: "200px",
-              marginTop: "-100px",
-            }}
-          >
+
+          <Carousel.Caption className="img">
             <h3>Access Control System</h3>
             <p>
               Access control is a data security process that enables
@@ -37,22 +38,30 @@ export default function Home() {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
+
         <Carousel.Item>
-          <div className="row">
-            <div>
-              <img
-                src="./Images/Surveillance system.jpeg"
-                className="d-block w-100"
-              ></img>
+          {/* <h2 style={{ fontWeight: "bold" }}>Security Solutions</h2> */}
+          <div className="sub-heading">Security Solutions</div>
+          <div className="container">
+            <div className="row">
+              <div className="col col-mid-6">
+                <img
+                  style={{ maxHeight: "600px" }}
+                  src="./Images/Surveillance system.jpeg"
+                  className="d-block w-100"
+                ></img>
+              </div>
+              <div className="col col-mid-4">
+                <img
+                  style={{ maxHeight: "600px" }}
+                  src="./Images/Tripod Bridge.JPG"
+                  className="d-block w-100"
+                ></img>
+              </div>
             </div>
           </div>
-          <Carousel.Caption
-            style={{
-              Width: "100%",
-              maxHeight: "300px",
-              marginTop: "-100px",
-            }}
-          >
+
+          <Carousel.Caption>
             <h3>Surveillance Systems</h3>
             <p>
               These systems can be applied to both interior and exterior areas
@@ -76,28 +85,29 @@ export default function Home() {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
+
         <Carousel.Item>
-          <div className="row">
-            <div className="col col-mid-6">
-              <div className="row">
-                <div className="col col-mid-6">
-                  <img
-                    src="./Images/Cyber security.jpeg"
-                    className="d-block w-100"
-                  ></img>
-                </div>
-                <div className="col col-mid-4">
-                  <img
-                    src="./Images/Tripod.JPG"
-                    className="d-block w-100"
-                  ></img>
-                </div>
+          {/* <h2 style={{ fontWeight: "bold" }}>Security Solutions</h2> */}
+          <div className="sub-heading">Security Solutions</div>
+          <div className="container">
+            <div className="row">
+              <div className="col col-mid-6">
+                <img
+                  style={{ minHeight: "60vh" }}
+                  src="./Images/Cyber security.jpeg"
+                  className="d-block w-100"
+                ></img>
+              </div>
+              <div className="col col-mid-4">
+                <img
+                  style={{ minHeight: "60vh" }}
+                  src="./Images/Tripod.JPG"
+                  className="d-block w-100"
+                ></img>
               </div>
             </div>
           </div>
-          <Carousel.Caption
-            style={{ Width: "100%", maxHeight: "200px", marginTop: "-100px" }}
-          >
+          <Carousel.Caption>
             <h3>Cyber Security Services</h3>
             <p>
               Cyber security services are professional services that help
@@ -110,13 +120,13 @@ export default function Home() {
         </Carousel.Item>
 
         <Carousel.Item>
+          <div className="sub-heading">Product & Services</div>
           <img
+            style={{ maxHeight: "600px" }}
             src="./Images/Software development.jpeg"
             className="d-block w-100"
           ></img>
-          <Carousel.Caption
-            style={{ Width: "100%", maxHeight: "200px", marginTop: "-100px" }}
-          >
+          <Carousel.Caption>
             <h3>Software Development</h3>
             <p>
               Software development refers to a set of computer science
@@ -135,13 +145,13 @@ export default function Home() {
         </Carousel.Item>
 
         <Carousel.Item>
+          <div className="sub-heading">Product & Services</div>
           <img
+            style={{ maxHeight: "600px" }}
             src="./Images/Cluode Solutions.png"
             className="d-block w-100"
           ></img>
-          <Carousel.Caption
-            style={{ Width: "100%", maxHeight: "200px", marginTop: "-100px" }}
-          >
+          <Carousel.Caption>
             <h3>Cloud Computing Services</h3>
             <p>
               cloud computing is the delivery of computing services—including
@@ -153,13 +163,13 @@ export default function Home() {
         </Carousel.Item>
 
         <Carousel.Item>
+          <div className="sub-heading">Product & Services</div>
           <img
+            style={{ maxHeight: "600px" }}
             src="./Images/Custom software Development.jpeg"
             className="d-block w-100"
           ></img>
-          <Carousel.Caption
-            style={{ Width: "100%", maxHeight: "200px", marginTop: "-100px" }}
-          >
+          <Carousel.Caption>
             <h3>Custom Software Development</h3>
             <p>
               We as an organization need applications with unique features and

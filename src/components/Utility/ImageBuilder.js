@@ -63,14 +63,8 @@ export default function ImageBuilder({ imageLists }) {
           return (
             <div>
               <div>
-                <img
-                  src={imgObjes.url}
-                  width={200}
-                  height={200}
-                  className="imageBuild"
-                  alt=""
-                ></img>
-                <h3 className="imgText">{imgObjes.text}</h3>
+                <img src={imgObjes.url}></img>
+                <h1 className="imgText">{imgObjes.text}</h1>
               </div>
             </div>
           );

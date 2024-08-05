@@ -10,7 +10,6 @@ export default function CustomSoftwareDevelopment() {
           <img
             className="imageBuild"
             src="./Images/Custom software Development.jpeg"
-            style={{ width: "800px", height: "200px" }}
           ></img>
         </div>
 
@@ -27,9 +26,8 @@ export default function CustomSoftwareDevelopment() {
             different skills required for the future development in different
             technologies, and use them in the workplace will help us become a
             successful in time delivery
-          </p>
-
-          <p>
+            <br></br>
+            <br />
             We as an organization need applications with unique features and
             functionality, they turn to software developers to design and create
             custom solutions. Custom software addresses users’ specific needs

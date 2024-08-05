@@ -38,19 +38,18 @@ export default function Security_Solutuions() {
 
   return (
     <>
-      <div className="heading">Security Solutions</div>
-      <div className="app-container">
-        <SecurityFamilyGroup
-          securityFamilies={securityFamily}
-          isSelected={isSelected}
-          setIsSelected={setIsSelected}
-        />
-        <div
-          class="vr"
-          style={{ height: "200px", margin: "20px", width: "10px" }}
-        ></div>
-        <div>
-          <RenderComponent index={isSelected}></RenderComponent>
+      <div className="securitySolutions">
+        <div className="heading">Security Solutions</div>
+        <div className="app-container">
+          <SecurityFamilyGroup
+            securityFamilies={securityFamily}
+            isSelected={isSelected}
+            setIsSelected={setIsSelected}
+          />
+          <div class="vr" style={{ height: "200px", margin: "20px" }}></div>
+          <div>
+            <RenderComponent index={isSelected}></RenderComponent>
+          </div>
         </div>
       </div>
     </>

@@ -7,11 +7,7 @@ export default function MobileApplicationsDevelopment() {
 
       <div class="customContainer">
         <div>
-          <img
-            className="imageBuild"
-            src="./Images/MAD.JPG"
-            style={{ width: "800px", height: "200px" }}
-          ></img>
+          <img className="imageBuild" src="./Images/MAD.JPG"></img>
         </div>
 
         <div className="paraConatainer">
@@ -20,8 +16,8 @@ export default function MobileApplicationsDevelopment() {
             applications that run on a mobile device, and a typical mobile
             application utilizes a network connection to work with remote
             computing resources
-          </p>
-          <p>
+            <br />
+            <br />
             We Identify opportunities to develop new mobile products and
             protocols, and develop APIs to support functionality of mobile
             devices. We Work closely in marketing and product development to
