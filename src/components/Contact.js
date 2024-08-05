@@ -5,6 +5,8 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import emailjs from "@emailjs/browser";
 import { Form } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const [Name, setName] = useState("");
@@ -20,6 +22,8 @@ export default function Contact() {
   const [errors, setErrors] = useState({});
 
   const form = useRef();
+
+  const notify = () => toast("Email Send Successfully!");
 
   const handleEmail = (e) => {
     console.log(Email);
@@ -53,15 +57,18 @@ export default function Contact() {
     console.log(Email + "," + PhoneNumber + "," + Subject + "," + Description);
 
     emailjs
-      .sendForm("service_glm7afc", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .sendForm("service_glm7afc", "template_vkbi98w", form.current, {
+        publicKey: "VL06iRudEsOA-jCAH",
       })
       .then(
         () => {
           console.log("SUCCESS!");
+          //toast.success("Email Sent SUCCESSFULLY!");
+          toast.success("Email Sent SUCCESSFULLY!!");
         },
         (error) => {
           console.log("FAILED...", error.text);
+          toast.error("FAILED to send Email !");
         }
       );
   };
@@ -100,7 +107,7 @@ export default function Contact() {
             WRITE US
           </div>
 
-          <form ref={form} className="formStyle">
+          <form ref={form} className="formStyle" onSubmit={handleSubmit}>
             <div>
               <label style={{ fontSize: "18px" }}>
                 <strong>Name</strong>
@@ -213,6 +220,7 @@ export default function Contact() {
               >
                 SEND
               </button>
+              {/* <ToastContainer></ToastContainer> */}
             </div>
           </form>
           {/* </div> */}
@@ -380,6 +388,14 @@ export default function Contact() {
               : Dharwad,Karnataka,India-580004
             </h3>
           </div> */}
+      <ToastContainer
+        toastStyle={{
+          backgroundColor: "Green",
+          fontSize: "16px",
+          fontWeight: "bold",
+          color: "white",
+        }}
+      ></ToastContainer>
     </>
   );
 }
