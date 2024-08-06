@@ -4,7 +4,7 @@ import validation from "./Validation";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import emailjs from "@emailjs/browser";
-import { Form } from "react-router-dom";
+import { Form, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -20,6 +20,8 @@ export default function Contact() {
 
   //Error hook
   const [errors, setErrors] = useState({});
+
+  const navigate = useNavigate();
 
   const form = useRef();
 
@@ -65,6 +67,10 @@ export default function Contact() {
           console.log("SUCCESS!");
           //toast.success("Email Sent SUCCESSFULLY!");
           toast.success("Email Sent SUCCESSFULLY!!");
+
+          setTimeout(() => {
+            navigate("/home");
+          }, 5000);
         },
         (error) => {
           console.log("FAILED...", error.text);
