@@ -28,7 +28,7 @@ export default function Home() {
             }}
           >
             <h3>Access Control System</h3>
-            <p>
+            <p style={{ background: "grey" }}>
               Access control is a data security process that enables
               organizations to manage who is authorized to access corporate data
               and resources. Secure access control uses policies that verify
@@ -54,7 +54,7 @@ export default function Home() {
             }}
           >
             <h3>Surveillance Systems</h3>
-            <p>
+            <p style={{ background: "grey" }}>
               These systems can be applied to both interior and exterior areas
               of a building or property. They can operate 24/7, can be designed
               to only record in response to movement, or set to record during
@@ -99,7 +99,7 @@ export default function Home() {
             style={{ Width: "100%", maxHeight: "200px", marginTop: "-100px" }}
           >
             <h3>Cyber Security Services</h3>
-            <p>
+            <p style={{ background: "grey" }}>
               Cyber security services are professional services that help
               organizations protect their networks and data from cyber-attacks
               and should form a part of a company's risk management plan. Cyber
@@ -118,7 +118,7 @@ export default function Home() {
             style={{ Width: "100%", maxHeight: "200px", marginTop: "-100px" }}
           >
             <h3>Software Development</h3>
-            <p>
+            <p style={{ background: "grey" }}>
               Software development refers to a set of computer science
               activities that are dedicated to the process of creating,
               designing, deploying, and supporting software. Software itself is
@@ -143,7 +143,7 @@ export default function Home() {
             style={{ Width: "100%", maxHeight: "200px", marginTop: "-100px" }}
           >
             <h3>Cloud Computing Services</h3>
-            <p>
+            <p style={{ background: "grey" }}>
               cloud computing is the delivery of computing services—including
               servers, storage, databases, networking, software, analytics, and
               intelligence—over the Internet (“the cloud”) to offer faster
@@ -161,7 +161,7 @@ export default function Home() {
             style={{ Width: "100%", maxHeight: "200px", marginTop: "-100px" }}
           >
             <h3>Custom Software Development</h3>
-            <p>
+            <p style={{ background: "grey" }}>
               We as an organization need applications with unique features and
               functionality, they turn to software developers to design and
               create custom solutions. Custom software addresses users’ specific

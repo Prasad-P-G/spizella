@@ -17,27 +17,29 @@ import Others from "./components/Security_Solutions/Others";
 
 function App() {
   return (
-    <Router>
-      <Navbar></Navbar>
+    <>
+      <Router>
+        <Navbar></Navbar>
 
-      <Routes>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/home" element={<Home />}></Route>
-        <Route path="/services" element={<Services />}></Route>
-        <Route path="/products" element={<Products />}></Route>
-        <Route path="/contact" element={<Contact></Contact>}></Route>
-        <Route path="/others" element={<Others></Others>}></Route>
-        <Route
-          path="/SecuritySolution"
-          element={<Security_Solutuions></Security_Solutuions>}
-        ></Route>
-        <Route
-          path="/softwareDevelopmentServices"
-          element={<SoftwareDS></SoftwareDS>}
-        ></Route>
-      </Routes>
-    </Router>
+        <Routes>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/products" element={<Products />}></Route>
+          <Route path="/contact" element={<Contact></Contact>}></Route>
+          <Route path="/others" element={<Others></Others>}></Route>
+          <Route
+            path="/SecuritySolution"
+            element={<Security_Solutuions></Security_Solutuions>}
+          ></Route>
+          <Route
+            path="/softwareDevelopmentServices"
+            element={<SoftwareDS></SoftwareDS>}
+          ></Route>
+        </Routes>
+      </Router>
+    </>
   );
 }
 

@@ -429,6 +429,14 @@ Form.Label {
 }
 
 body {
+  .Carousel-Caption {
+    p {
+      background-color: rgb(145, 30, 30);
+    }
+    h3 {
+      background-color: rgb(119, 16, 16);
+    }
+  }
   img {
     border-radius: 20px;
   }
@@ -441,9 +449,9 @@ body {
   h3 {
     border-radius: 20px;
   }
-  .carousel-caption {
-    background: none;
-  }
+  /* .carousel p {
+    background: #c51682;
+  } */
   body {
     .sub-heading {
       font-size: 14px;
@@ -1190,6 +1198,13 @@ body {
     .heading {
       font-size: 30px;
     }
+  }
+
+  /* .allItems {
+    display: toggleStatus ? "flex":"none";
+  } */
+  .MenutoggleButton {
+    display: none;
   }
 
   /*#region Customer SD */
