@@ -342,6 +342,12 @@ div {
   margin-left: 10px;
 }
 
+.customerEntry {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .btnSend {
   display: flex;
   justify-content: center;
@@ -383,7 +389,8 @@ Form.Label {
 .buttonSend {
   font-weight: bold;
   background-color: green;
-  font-size: 20;
+  font-size: 16px;
+  height: 25px;
 }
 .buttonSend:hover {
   background-color: yellowgreen;
@@ -937,7 +944,8 @@ body {
 
   /*#endregion Home - Carousel*/
 }
-
+/****************************************************************************/
+/****************************************************************************/
 @media only screen and (min-width: 300px) {
   body {
     .sub-heading {
@@ -950,6 +958,24 @@ body {
       padding-left: 10px;
     }
   }
+
+  /*#region Contact */
+  .customerEntry {
+    input {
+      width: 90%;
+      height: 50%;
+      font-size: 14px;
+    }
+    div {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    label {
+      font-size: 14px;
+    }
+  }
+
+  /*#endregion Contact */
 
   /*#region Customer SD */
   .customContainer {

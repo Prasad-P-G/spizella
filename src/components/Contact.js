@@ -102,13 +102,13 @@ export default function Contact() {
         Contact
       </div>
       {/* <div className="ContainerItems"> */}
-      <div className="row">
+      <div className="row" style={{ fontSize: "20px" }}>
         {/* form fields */}
         <div className="col">
           {/* <div> */}
           <div
             className="contactHeading"
-            style={{ fontSize: "25px", fontWeight: "bold" }}
+            style={{ fontWeight: "bold", padding: "0" }}
           >
             WRITE US
           </div>
@@ -146,7 +146,7 @@ export default function Contact() {
                 className="form-control"
               ></input>
               {!ValidEmail && (
-                <p
+                <label
                   style={{
                     color: "Red",
                     fontWeight: "bold",
@@ -155,7 +155,7 @@ export default function Contact() {
                   }}
                 >
                   Please enter a valid email
-                </p>
+                </label>
               )}
             </div>
 
@@ -163,8 +163,12 @@ export default function Contact() {
               <div>
                 <label style={{ fontSize: "18px" }}>
                   <strong>Phone Number</strong>
-                  <PhoneInput
+                  <input
+                    type="hidden"
                     name="phone_number"
+                    value={PhoneNumber}
+                  ></input>
+                  <PhoneInput
                     country={"in"}
                     inputProps={{
                       require: true,
@@ -175,7 +179,7 @@ export default function Contact() {
                 </label>
               </div>
               {!Valid && (
-                <p
+                <lable
                   style={{
                     color: "Red",
                     fontWeight: "bold",
@@ -184,7 +188,7 @@ export default function Contact() {
                   }}
                 >
                   Please enter a valid phone number
-                </p>
+                </lable>
               )}
             </div>
 
@@ -209,7 +213,7 @@ export default function Contact() {
               </label>
               <textarea
                 name="message"
-                rows="5"
+                rows="3"
                 cols="40"
                 value={Description}
                 placeholder="Enter Description"
@@ -397,7 +401,7 @@ export default function Contact() {
       <ToastContainer
         toastStyle={{
           backgroundColor: "Green",
-          fontSize: "16px",
+          fontSize: "14px",
           fontWeight: "bold",
           color: "white",
         }}

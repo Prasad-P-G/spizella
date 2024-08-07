@@ -53,6 +53,13 @@ export default function Navbar() {
 
     console.log(toggleStatus);
   };
+  const itemClicked = () => {
+    console.log("item is clicked");
+    console.log("width is : ", windowSize.width);
+    if (windowSize.width < 768) {
+      setToggleStatus(false);
+    }
+  };
 
   return (
     <div>
@@ -97,7 +104,7 @@ export default function Navbar() {
             <div>
               <div className="allItems">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={itemClicked}>
                     <Link
                       className="nav-link active"
                       aria-current="page"
@@ -124,7 +131,7 @@ export default function Navbar() {
                       style={{ background: "#484aba" }}
                     >
                       <ul>
-                        <li>
+                        <li onClick={itemClicked}>
                           <Link
                             className="dropdown-item"
                             to="/SecuritySolution"
@@ -156,7 +163,7 @@ export default function Navbar() {
                       style={{ background: "#484aba" }}
                     >
                       <ul>
-                        <li>
+                        <li onClick={itemClicked}>
                           <Link
                             className="dropdown-item"
                             to="/softwareDevelopmentServices"
@@ -172,7 +179,7 @@ export default function Navbar() {
                     </div>
                   </li>
 
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={itemClicked}>
                     <Link
                       className="nav-link active"
                       aria-current="page"
@@ -183,7 +190,7 @@ export default function Navbar() {
                     </Link>
                   </li>
 
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={itemClicked}>
                     <Link
                       className="nav-link active"
                       aria-current="page"
